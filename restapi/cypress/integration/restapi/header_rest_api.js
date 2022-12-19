@@ -18,6 +18,5 @@ describe('Header Test Valid', () => {
         cy.get('@pokemon').its('headers').its('connection').should('include' , 'keep-alive')
         cy.get('@pokemon').its('body').should('include', {name:'ruby'})
         
-        
     });
 })
